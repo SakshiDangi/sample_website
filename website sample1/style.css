@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:ital,wght@1,300&family=Playfair+Display:ital,wght@1,500&family=Raleway:ital,wght@1,200&family=Roboto:ital,wght@0,900;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: black;
+    color: rgb(229, 229, 229);
+    cursor: pointer;
+}
+header .logo{
+    font-family: 'Dancing Script', cursive;
+}
+header .logo span{
+    color: rgb(230, 64, 64);
+    font-family: 'Dancing Script', cursive;
+}
+header .header-link ul{
+    list-style-type: none;
+}
+header .header-link{
+    display: flex;
+    list-style-type: none;
+}
+.header-link li{
+    margin: 0 30px;
+}
+header .header-link ul:hover{
+    opacity: 0.25;
+    cursor: pointer;
+}
+   
+.mySlides {
+    display:none;
+    width: 100%;
+    height: 90vh;
+}
+.contentBx{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(212, 213, 215);
+    margin: 10pxs;
+}
+.contentBx > div{
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px 5px;
+    height: 50vh;
+    justify-content: space-between;
+    margin: 20px 25px;
+}
+.contentBx .imgBx{
+    width: 100%;
+    height: 45vh;
+    justify-content: center;
+}
+.contentBx .p{
+    align-items: center;
+    padding: 10px 0 0 5px;
+    cursor: pointer;
+}
+
+section{
+    background-color: blue;
+}
+
+footer{
+    background-color: rgb(250, 212, 212);
+    height: 25vh;
+}
+.footerBx{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10pxs;
+}
+.footerBx > div{
+    width: 50%;
+    margin: 10px 5px;
+    height: 20vh;
+    justify-content: space-between;
+    margin: 20px 25px;
+}
+.footerBx h3 .heading{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+}
+footer .para p{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+@media screen and (max-width: 600px){
+    header{
+        display:inline-block;
+        display: grid;
+        place-items: center;
+    }
+    header .logo{
+        display: block;
+    }
+    .contentBx{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
